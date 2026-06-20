@@ -1246,8 +1246,16 @@ export default function App() {
 
       {/* Overlay Modals */}
       {infoModalOpen && (
-        <div className="signature-overlay animate-fade-in" style={{ zIndex: 2000 }}>
-          <div className="signature-modal glassmorphic animate-slide-in" style={{ width: '600px', maxWidth: '90vw', padding: '2rem' }}>
+        <div 
+          className="signature-overlay animate-fade-in" 
+          style={{ zIndex: 2000 }}
+          onClick={() => setInfoModalOpen(false)}
+        >
+          <div 
+            className="signature-modal glassmorphic animate-slide-in" 
+            style={{ width: '600px', maxWidth: '90vw', padding: '2rem' }}
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="signature-header" style={{ marginBottom: '1.5rem', borderBottom: '1px solid var(--glass-border)', paddingBottom: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Info size={24} style={{ color: 'var(--primary-accent)' }} />
