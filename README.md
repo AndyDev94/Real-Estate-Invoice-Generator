@@ -28,6 +28,7 @@ I wished they had a simple, free, and efficient online tool to generate professi
 - **💾 Local Auto-Save & Drafts**: Saves all agent profiles and draft work to browser local storage so you never lose your progress.
 - **🔗 Live Synchronization & Sharing**: Generate lightweight, base64-encoded shareable links to send preview drafts directly to clients or other browsers.
 - **📥 Premium PDF Rendering**: Outputs clean, high-resolution A4 PDFs sized exactly to content scale.
+- **📱 Fully Mobile Responsive**: Engineered to work beautifully on smartphones and tablets, featuring a custom workspace layout switcher for on-the-go invoice generation.
 
 ---
 
