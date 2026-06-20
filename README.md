@@ -1,16 +1,80 @@
-# React + Vite
+# 📑 Real Estate Agent Invoice Generator Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Built with ❤️ by Aneesh Gupta to simplify invoicing for independent real estate professionals.**
 
-Currently, two official plugins are available:
+An advanced, fully client-side React 19 web application built on Vite. It allows real estate agents and brokers to instantly generate print-ready, professional, and MahaRERA-compliant commission and brokerage invoices in less than a minute.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 💡 Why This Was Built (The Story)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This project was born out of a genuine need to solve a real-life family challenge. 
 
-## Expanding the ESLint configuration
+My parents (mom and dad) work in the highly demanding and fast-paced **real estate** industry as registered agents in Maharashtra, India. For years, I watched them struggle with the tedious and error-prone process of manually typing and formatting complex MahaRERA-compliant commission invoices in Microsoft Word. It was time-consuming, frustrating, and took away precious hours from their core business operations.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I wished they had a simple, free, and efficient online tool to generate professional invoices instantly. Since I couldn't find one that fit their exact needs, I built this generator. Now, they can customize details, manage templates, draw digital signatures, and download print-ready A4 PDFs in just under a minute.
+
+---
+
+## ✨ Features
+
+- **⚡ Real-time Inline Editing**: Modify any text block, bank detail, or amount directly on the invoice preview with live auto-calculations.
+- **🎨 Custom Styling & Layouts**:
+  - **4 Designer Templates**: Classic Professional, Modern Teal, Luxury Serif, and Bold Accent.
+  - Custom brand accent color picker and multiple typography presets.
+- **🔏 Built-in Digital Signature Pad**: Draw your signature directly in-app or upload a signature image to stamp your invoices.
+- **🇮🇳 MahaRERA Compliant**: Auto-injects required registration blocks for MahaRERA agents and project numbers.
+- **💰 Smart Tax & Calculations**: Supports SGST/CGST, IGST, customizable tax rates, agreement values, and automated commission percentage calculations.
+- **💾 Local Auto-Save & Drafts**: Saves all agent profiles and draft work to browser local storage so you never lose your progress.
+- **🔗 Live Synchronization & Sharing**: Generate lightweight, base64-encoded shareable links to send preview drafts directly to clients or other browsers.
+- **📥 Premium PDF Rendering**: Outputs clean, high-resolution A4 PDFs sized exactly to content scale.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Core**: React 19, JavaScript (ES6+), HTML5, Vanilla CSS
+- **Build Tool**: Vite
+- **Libraries**:
+  - `jspdf` (High-fidelity PDF generation)
+  - `html2canvas` (Precise A4 layout capturing)
+  - `lucide-react` (Modern interface icons)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed (v18.0.0 or higher is recommended).
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/AndyDev94/Real-Estate-Invoice-Generator.git
+   cd Real-Estate-Invoice-Generator
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:5173/`.
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   This compiles the project into the `dist/` directory, ready to be deployed to GitHub Pages, Netlify, Vercel, or any static hosting platform.
+
+---
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
